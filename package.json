@@ -1,0 +1,24 @@
+{
+  "name": "my-typescript-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadhaviBatta/my-typescript-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MadhaviBatta/my-typescript-app/issues"
+  },
+  "homepage": "https://github.com/MadhaviBatta/my-typescript-app#readme",
+  "devDependencies": {
+    "typescript": "^6.0.2"
+  }
+}
