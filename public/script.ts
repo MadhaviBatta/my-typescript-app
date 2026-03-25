@@ -3,9 +3,10 @@ const expDesc=document.getElementById('desc')! as HTMLInputElement;
 const expAmt=document.getElementById('amount')! as HTMLInputElement;
 const addExpBtn=document.getElementById('add-expense-btn')! as HTMLButtonElement;
 
+let expenseItems: Expense[]=[];
 class Expense{
-    static currentId: number =0;
-    id: number=0;
+    private static currentId: number =0;
+    readonly id: number=0;
     type: 'credit' | 'debit' ='debit';
     description: string='';
     amount: number=0;
@@ -22,5 +23,7 @@ addExpBtn.addEventListener('click',function(event){
     event.preventDefault();
     let type=expType.value === 'credit' ? 'credit' : 'debit';
     const exp=new Expense(type,expDesc.value,expAmt.value);
-    console.log(exp);
+    
+    expenseItems.push(exp);
+    console.log(expenseItems);
 });
