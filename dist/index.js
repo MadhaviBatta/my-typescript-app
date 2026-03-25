@@ -1,5 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const message = "Hello from Codespaces!, created by madhavi b";
+//import "./app";
+const message = "Hello from Codespaces!, created by madhavi b hi ssss";
 console.log(message);
+export {};
 //# sourceMappingURL=index.js.map
