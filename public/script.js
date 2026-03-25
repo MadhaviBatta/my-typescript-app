@@ -18,7 +18,8 @@ Expense.currentId = 0;
 addExpBtn.addEventListener('click', function (event) {
     console.log("--hi--");
     event.preventDefault();
-    const exp = new Expense('credit', 'test', 100);
+    let type = expType.value === 'credit' ? 'credit' : 'debit';
+    const exp = new Expense(type, expDesc.value, expAmt.value);
     console.log(exp);
 });
 export {};
